@@ -18,11 +18,13 @@ const height = 6
 func principal() {
 	var i, j int = 42, 2701
 	p := &i
+	p2 := p
 
 	// Agrego para mostrar
 	addVariable("i", &i, 0, 0)
 	addVariable("j", &j, 1, 0)
 	addVariableP("p", &p, 2, 0)
+	addVariableP("p2", &p2, 3, 0)
 
 	actualizarConsola()
 
@@ -33,6 +35,7 @@ func principal() {
 	addVariable("i", &i, 0, 1)
 	addVariable("j", &j, 1, 1)
 	addVariableP("p", &p, 2, 1)
+	addVariableP("p2", &p2, 3, 1)
 
 	actualizarConsola()
 }
